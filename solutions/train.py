@@ -1,9 +1,9 @@
 """Train the decoder-only transformer.
 
-From the CS593 directory, with the course virtualenv:
+From solutions/, with the repo virtualenv activated:
 
-    .venv/bin/python transformer-from-scratch/solutions/train.py reverse
-    .venv/bin/python transformer-from-scratch/solutions/train.py shakespeare
+    python train.py reverse
+    python train.py shakespeare
 
 `reverse` learns a function (write the string backwards after '>'). It is
 the check that the model, the mask, and this loop are working. A few

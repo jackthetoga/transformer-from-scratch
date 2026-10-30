@@ -34,7 +34,8 @@ from pathlib import Path
 
 import torch
 
-DATA_DIR = Path(__file__).resolve().parent / "data"
+# The corpus lives at the repo root (data/tinyshakespeare.txt), not under solutions/.
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 SHAKESPEARE_PATH = DATA_DIR / "tinyshakespeare.txt"
 
 REVERSE_CHARS = "abcdefghijklmnopqrstuvwxyz"
